@@ -1,0 +1,19 @@
+
+<h1>Todo App</h1>
+
+  <h5>Show a Task</h5>
+  <p><%= @task['name'] %></p>
+  <h5>Task Details:</h5>
+  <p><%= @task['details'] %></p>
+  <a href="/tasks">Home</a>
+
+
+<form action="/tasks/<%= @task['id']%>" method='post'>
+  <label for='name'>Edit Task: </label>
+  <input type='text' name='name' value="<%= @task['name'] %>">
+  <label for='details'>Edit Details: </label>
+  <textarea name='details'><%= @task['details'] %></textarea>
+  <button>Edit Task</button>
+</form>
+
+

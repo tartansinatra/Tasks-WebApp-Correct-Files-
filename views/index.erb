@@ -1,0 +1,19 @@
+<h1>Todo App</h1>
+
+<% @tasks.each do |task| %>
+  <h5>Task Name:
+  <%= task['name'] %><p>
+  <h5>Task Details:
+  <%= task['details'] %></h5>
+  
+  <a href="/tasks/<%= task['id'] %>">Show Task</a>
+  <!-- <a href="/tasks/delete<%= task['id'] %>">Delete Task</a> -->
+<!-- THE ABOVE LINE IS NOT REQUIRE IF YOU USE A INPUT TYPE='SUMBIT' BUTTON AS ON LINE 13" -->
+ 
+ 
+ 
+
+
+
+
+<% end %>
